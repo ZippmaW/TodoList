@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <dialog id="dialog-project">
+      <form method="dialog" id="form">
+        <legend id="legend">Project</legend>
+        <div>
+          <label for="author"> Title: </label>
+          <input type="text" id="author" required />
+        </div>
+        <div>
+          <label for="title">Description:</label>
+          <input type="text" id="title" required />
+        </div>
+        <button id="close">Close</button>
+        <button type="submit" id="submit">Create</button>
+      </form>
+    </dialog>
+    <dialog id="dialog-task">
+      <form method="dialog" id="form">
+        <legend id="legend">Task</legend>
+        <div>
+          <label for="author"> Title: </label>
+          <input type="text" id="author" required />
+        </div>
+        <div>
+          <label for="title">Description:</label>
+          <input type="text" id="title" required />
+        </div>
+        <div>
+          <label for="pages">dueDate:</label>
+          <input type="text" id="pages" required />
+        </div>
+        <div>
+          <label for="priority">Priority</label>
+          <select name="priority" id="priority">
+            <option value="Low"></option>
+            <option value="Mid"></option>
+            <option value="High"></option>
+          </select>
+        </div>
+        <button id="close">Close</button>
+        <button type="submit" id="submit">Create</button>
+      </form>
+    </dialog>
+    <div class="sidebar">
+      <div class="main-sidebar">
+        <div id="projects"><h2>Projects</h2></div>
+        <div class="create-project-button">
+          <button class="create-project">Create Project +</button>
+        </div>
+        <div class="projects-list"></div>
+      </div>
+    </div>
+    <div class="content"></div>
+  </body>
+</html>
